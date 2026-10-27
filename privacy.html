@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="個人用生活支援システムJARVIS（jarvis_project）の機能・Google Calendar連携・データの扱い。"><title>プライバシーポリシー | JARVIS</title><style>:root{color-scheme:light;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#1a2b3c;background:#f3f6f8}*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:860px;margin:auto;padding:24px}header{display:flex;gap:20px;align-items:center;justify-content:space-between;border-bottom:1px solid #d7e0e7}header strong{letter-spacing:.12em}nav{display:flex;gap:18px;flex-wrap:wrap}a{color:#155b70;text-underline-offset:4px}main{padding-top:45px;padding-bottom:48px;line-height:1.9}h1{line-height:1.4;font-size:clamp(27px,5vw,38px);margin:12px 0 24px}h2{font-size:21px;margin:32px 0 10px}p{margin:10px 0}li{margin:9px 0}.eyebrow{font-size:13px;color:#496475;letter-spacing:.12em}.note{padding:16px 20px;background:#e5eef2;border-left:4px solid #397184;border-radius:4px}.muted,footer{color:#536674;font-size:14px}footer{border-top:1px solid #d7e0e7;line-height:1.8}@media(max-width:540px){header{align-items:flex-start;flex-direction:column}header,main,footer{padding-left:20px;padding-right:20px}main{padding-top:30px}}
+</style></head>
+<body><header><strong>JARVIS</strong><nav aria-label="メイン"><a href="index.html">概要</a><a href="privacy.html">プライバシー</a><a href="terms.html">利用条件</a></nav></header><main>
+<p class="eyebrow">JARVIS / jarvis_project</p>
+<h1>プライバシーポリシー</h1>
+<p class="muted">最終更新：2026年10月27日</p>
+<p>このポリシーは、個人用生活支援システムJARVISのGoogle Calendar連携と、それに関連する案内機能での情報の扱いを説明します。</p>
+<h2>1. アクセスする情報と目的</h2>
+<p>本人が許可したGoogleカレンダーについて、カレンダーの識別情報、予定の識別情報・件名・開始終了日時・場所など、予定の取得や操作に必要な情報を扱います。目的は予定案内、移動・出発時刻の準備、および本人が確認した予定の追加・変更・削除です。</p>
+<p>現在のOAuth設定は、Google Calendarの読み取り・変更を含む権限を要求します。そのうえで、アプリ内の設定と本人の確認によって、実際に操作する対象と内容を制限します。</p>
+<p>予定の説明欄に場所を示す情報が含まれる場合、移動案内のために参照することがあります。自動の今日・明日の予定コンテキスト生成では説明欄全文をAIへ渡さず、予約番号・電話番号・チケット情報を案内用データから除外します。一方、個別予定を取得してAIで回答する経路では、説明欄などを含む取得結果がAIに渡る場合があります。すべての経路で説明欄が除外されるものではありません。</p>
+<h2>2. 保存する情報</h2>
+<p>Googleへのアクセスを継続するためのOAuthトークン、予定案内用のキャッシュ、関連する設定や会話記録は、利用環境のPC・端末に保存される場合があります。会話記録には予定に関する発話や返答が含まれることがあります。</p>
+<p>この公開Webサイトや公開リポジトリに、実際の予定、会話記録、OAuthトークン、APIキーを掲載することはありません。</p>
+<h2>3. 外部サービスへの送信</h2>
+<ul><li><strong>Google：</strong>認証とCalendar APIを使った予定の取得・操作に必要な通信を行います。</li><li><strong>Google Mapsなどの地図・経路サービス：</strong>移動案内が必要な場合、住所・位置情報・駅名・施設名などを送信することがあります。映画館名から目的地を確認する場合があります。</li><li><strong>設定された生成AIサービス：</strong>会話や依頼の理解・回答生成のため、発話、会話の文脈、必要なツール結果を送信することがあります。現在の通常会話はOpenAI APIを利用します。</li></ul>
+<p>各外部サービスの処理・保持条件は、そのサービスのポリシーと利用環境の設定にも従います。JARVISは、Googleユーザーデータを販売したり、広告配信や汎用AIモデルの学習を目的として利用したりしません。</p>
+<p>JARVISによるGoogle APIから受け取った情報の利用と他のアプリへの転送は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>（Limited Useの要件を含む）に従います。</p>
+<h2>4. 保存期間・削除・アクセスの取り消し</h2>
+<p>保存データは、利用環境で機能を提供するために保持します。すべての記録を一定日数で自動削除する仕組みは前提にしていません。利用者本人または管理者が、該当するローカル記録・キャッシュ・トークンと、管理下にあるバックアップを確認して削除します。外部サービスに保存された情報は、そのサービスの手順に従います。</p>
+<p>Googleへの今後のアクセスは、<a href="https://myaccount.google.com/connections">Googleアカウントの接続管理</a>からJARVISの接続を取り消すことで停止できます。接続の取り消しだけでは、すでにPC・端末へ保存された記録は削除されません。JARVISの記録の削除と、Googleカレンダー上の予定の削除は別の操作です。</p>
+<h2>5. この公開Webサイトについて</h2>
+<p>このサイトはGitHub Pagesで配信する静的な説明ページです。フォーム、Googleログイン、独自のアクセス解析スクリプト、マイク・位置情報の取得機能は設けていません。配信に伴うアクセス情報は、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーポリシー</a>に従って処理される場合があります。</p>
+<h2>6. 問い合わせ・改定</h2>
+<p>運営：JARVISプロジェクト管理者（GitHub：m0-sugioka）。一般的な問い合わせは<a href="https://github.com/m0-sugioka/m0-sugioka.github.io/issues">公開ページのIssues</a>へお願いします。予定・住所・認証情報を公開投稿しないでください。個別データの確認・削除は、利用環境の管理者へ直接依頼してください。情報の扱いを変更する場合は、このページを更新します。</p>
+</main><footer>JARVIS / jarvis_project · 個人用生活支援システム<br>Googleアカウントや予定の操作は、この公開サイトでは行いません。</footer></body></html>
